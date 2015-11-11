@@ -1,0 +1,32 @@
+{
+  "manifest_version": 2,
+
+  "name": "Speedy YouFlix",
+  "description": "Speed Up YouTube and NetFlix Videos",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "face.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "activeTab",
+    "https://ajax.googleapis.com/",
+    "http://www.youtube.com/*",
+    "https://www.youtube.com/*",
+    "http://www.netflix.com/*",
+    "https://www.netflix.com/*"
+  ],
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "content_scripts": [
+    {
+      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*", "http://www.netflix.com/*", "https://www.netflix.com/*"],
+      // "css": ["mystyles.css"],
+      "js": ["videoSpeed.js"]
+    }
+  ]
+}
+

@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+  <head>
+    <title>Speed Up YouTube and NetFlix Videos</title>
+    <style>
+      body {
+        font-family: "Segoe UI", "Lucida Grande", Tahoma, sans-serif;
+        font-size: 125%;
+      }
+      #status {
+        /* avoid an excessively wide status text */
+        white-space: pre;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        max-width: 400px;
+      }
+    </style>
+    <!--
+      - JavaScript and HTML must be in separate files: see our Content Security
+      - Policy documentation[1] for details and explanation.
+      -
+      - [1]: https://developer.chrome.com/extensions/contentSecurityPolicy
+     -->
+    <script src="videoSpeed.js"></script>
+  </head>
+  <body>
+    <form>
+    Enter Speed: <input id="speedInfo" type="text" value="2.5"><br>
+    <button id="speedUp" >Fast Forward</button>
+    </form>
+  </body>
+</html>
