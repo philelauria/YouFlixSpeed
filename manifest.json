@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
 
-  "name": "Speedy YouFlix",
+  "name": "YouFlixSpeed",
   "description": "Speed Up YouTube and NetFlix Videos",
   "version": "1.0",
 
@@ -15,7 +15,8 @@
     "http://www.youtube.com/*",
     "https://www.youtube.com/*",
     "http://www.netflix.com/*",
-    "https://www.netflix.com/*"
+    "https://www.netflix.com/*",
+    "https://yammer.com/*"
   ],
   "background": {
     "scripts": ["background.js"],
@@ -23,7 +24,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*", "http://www.netflix.com/*", "https://www.netflix.com/*"],
+      "matches": ["http://www.youtube.com/*", "https://www.youtube.com/*", "http://www.netflix.com/*", "https://www.netflix.com/*", "https://yammer.com/*"],
       // "css": ["mystyles.css"],
       "js": ["videoSpeed.js"]
     }
