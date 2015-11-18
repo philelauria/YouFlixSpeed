@@ -6,7 +6,7 @@
   "version": "1.0",
 
   "browser_action": {
-    "default_icon": "face.png",
+    "default_icon": "clock.png",
     "default_popup": "popup.html"
   },
   "permissions": [
@@ -16,7 +16,15 @@
     "https://www.youtube.com/*",
     "http://www.netflix.com/*",
     "https://www.netflix.com/*",
-    "https://yammer.com/*"
+    "https://yammer.com/*"//,
+    /*{
+        "usbDevices": [
+          {
+            "vendorId": "exampleNum",
+            "productId": "otherNum"
+          }
+        ]
+    }*/
   ],
   "background": {
     "scripts": ["background.js"],
